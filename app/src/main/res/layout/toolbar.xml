@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60.0dip"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        app:layout_scrollFlags="enterAlways|scroll">
+
+        <RelativeLayout
+            android:id="@+id/toolbarWrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_Logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/logo" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_10dp_margin"
+                android:layout_marginRight="@dimen/activity_5dp_margin"
+                android:layout_toRightOf="@+id/iv_Logo"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:text="Shop Organikos"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btnCart"
+                android:layout_toStartOf="@+id/btnCart"
+                android:background="@color/white"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                android:padding="8dp"
+                android:src="@drawable/ic_search_black_24px"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Account"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/rl_Notification"
+                android:layout_toStartOf="@+id/rl_Notification"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_Account"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_person" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/rl_Notification"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btnWish"
+                android:layout_toStartOf="@+id/btnWish"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_Notification"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/logo" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnWish"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btnCart"
+                android:layout_toStartOf="@+id/btnCart"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_Wish"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_favorite_home" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+
+                    android:id="@+id/tv_Wish_Count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle_red_notification_bg"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:minHeight="18.0dip"
+                    android:minWidth="18.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="9.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/btnCart"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/imgCart"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_shopping_cart_black_24px" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tvCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle_red_notification_bg"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:minHeight="18.0dip"
+                    android:minWidth="18.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="9.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbarShadow"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/shop_Organic_Color"
+        android:visibility="visible" />
+</LinearLayout>

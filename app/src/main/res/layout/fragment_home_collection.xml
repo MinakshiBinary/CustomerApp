@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_SellProduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:clickable="true">
+
+
+    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+        android:id="@+id/tvCollection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:gravity="center"
+        android:text="------Title------"
+        android:textAllCaps="true"
+        android:textColor="@color/red_dark"
+        android:textSize="@dimen/text_17"
+        android:textStyle="bold" />
+
+
+    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+        android:id="@+id/tv_Category_No_Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCollection"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_20dp_margin"
+        android:paddingTop="@dimen/activity_20dp_margin"
+        android:text="No Product is Available "
+        android:textSize="@dimen/text_17"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvCollection"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:layout_marginRight="@dimen/margin5dp"
+        android:layout_marginTop="@dimen/activity_5dp_margin" />
+
+
+</RelativeLayout>

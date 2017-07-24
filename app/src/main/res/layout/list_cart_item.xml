@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="145.0dip"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dip">
+
+            <ImageView
+                android:id="@+id/iv_ProductImage"
+                android:layout_width="100dip"
+                android:layout_height="135dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/logo"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_16"
+                android:layout_toLeftOf="@+id/ll_Remove"
+                android:layout_toRightOf="@+id/iv_ProductImage"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_ProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1.0dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Tory Burch"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Quantity : "
+                        android:textAllCaps="true"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="normal" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:id="@+id/tv_Qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_ChangeQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_down_drop" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ll_Qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_QtyFirst"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/textSecondary" />
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_QtySecond"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/textSecondary" />
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_QtyThird"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/textSecondary" />
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_QtyForth"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/textSecondary" />
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_QtyFifth"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/textSecondary" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/ll_OldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_strick_price"
+                        android:text="Rs"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_11"
+                        android:textStyle="bold" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:id="@+id/tv_OldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_strick_price"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="1200"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs "
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="bold" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:id="@+id/tv_Price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="120000"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/ll_Remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16.0dip">
+
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:src="@drawable/ic_close" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottombutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_Edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16.0dip"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:src="@drawable/edit"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_big"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider" />
+</RelativeLayout>

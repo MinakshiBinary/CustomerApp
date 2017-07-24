@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="168.0dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <LinearLayout
+                android:id="@+id/ll_Profile_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="168dp"
+                android:layout_marginLeft="@dimen/margin15dp"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/civ_Profile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/ic_account_circle_black_24dp"
+                    android:gravity="center_vertical"
+                    app:civ_border_color="@color/lightGrey"
+                    app:civ_border_width="1dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_toRightOf="@+id/ll_Profile_Image"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Sanket"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_12"
+                    android:textStyle="bold" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Brand"
+                    android:layout_centerHorizontal="true"
+                    android:text="sanket@thinktanker.in"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_13" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_Credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Brand"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_MyOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <ImageView
+                android:id="@+id/iv_Order"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_local_offer_black_24px" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="My Orders"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <ImageView
+                android:id="@+id/iv_Notification"
+
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_import_export_white_24px" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="Notifications"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="168.0dip"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/shop_Organic_Color"
+                app:cardCornerRadius="4.0dip"
+                app:cardElevation="0.0dip"
+                app:contentPaddingLeft="8.0dip"
+                app:contentPaddingRight="8.0dip">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_NotificationCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider_horzontal_margin16dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/orders" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="Saved Addresses"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_SavedCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_favorite_home" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="Saved Cards"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider_horzontal_margin16dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <ImageView
+                android:id="@+id/iv_Offer"
+
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_loyalty_black_24px" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="My Offers"
+                app:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <RelativeLayout
+            android:id="@+id/rl_SignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80.0dip"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:id="@+id/tv_SignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="SIGN OUT"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_12"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

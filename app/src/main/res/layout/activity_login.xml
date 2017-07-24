@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ll_Background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            android:orientation="vertical"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/ll_Logo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/margin80dp"
+                android:layout_height="@dimen/margin80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/text"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_MainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_Header"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:background="@drawable/rounded_border"
+            android:padding="4.0dip">
+
+            <EditText
+                android:id="@+id/et_Phone_Number"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_Submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:background="@drawable/rounded_border_blue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin10dp"
+            android:paddingLeft="@dimen/margin25dp"
+            android:paddingRight="@dimen/margin15dp"
+            android:paddingTop="@dimen/margin10dp">
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:id="@+id/tv_Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:text="Next"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_22"
+                custom:textAllCaps="true" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_24px" />
+        </LinearLayout>
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:id="@+id/tv_Skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/margin5dp"
+            android:text="Skip >>"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin8dp">
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Don't have an Account?"
+            android:textSize="@dimen/text_16" />
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:id="@+id/tv_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin8dp"
+            android:text="Sign Up For Free"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_18" />
+    </LinearLayout>
+
+
+</RelativeLayout>

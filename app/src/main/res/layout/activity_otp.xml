@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fashionic.activities.OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:background="@drawable/rounded_border"
+            android:padding="4.0dip">
+
+            <EditText
+                android:id="@+id/et_Otp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:hint="Enter OTP"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_16" />
+        </RelativeLayout>
+
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:id="@+id/tv_Submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:background="@drawable/rounded_border_blue"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_22" />
+    </LinearLayout>
+</RelativeLayout>

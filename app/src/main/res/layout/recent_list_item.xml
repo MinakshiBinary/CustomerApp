@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="0dp">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:layout_marginRight="@dimen/margin5dp"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10dp"
+            android:layout_marginRight="@dimen/margin10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <ImageView
+                    android:id="@+id/iv_Favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/margin8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_favorite"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_MiddleContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10dp"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:foregroundGravity="center_vertical">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Product Name"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="18sp" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tvOldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_Name"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/margin20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_strick_price_white"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="MRP"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="17sp" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tvSellingPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_Name"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="MRP"
+                    android:textColor="@color/red_dark"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--
+        <RelativeLayout
+            android:id="@+id/rl_Product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:adjustViewBounds="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/imgProduct"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:minLines="2"
+                    android:text="name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="@dimen/text_10">
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewRS
+                        android:id="@+id/tvOldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Rs 900"
+                        android:textColor="@color/textColorOldPrice"
+                        android:textSize="@dimen/text_12"
+                        android:visibility="gone" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewRS
+                        android:id="@+id/tvSellingPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/tvOldPrice"
+                        android:layout_toRightOf="@+id/tvOldPrice"
+                        android:text="Rs. 1200"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_10dp_margin"
+                    android:layout_marginRight="@dimen/activity_10dp_margin"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/activity_20dp_margin"
+                        android:layout_height="@dimen/activity_20dp_margin"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/ic_add_black_24dp" />
+
+                    <TextView
+                        android:layout_width="@dimen/activity_20dp_margin"
+                        android:layout_height="@dimen/activity_20dp_margin"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/ic_remove_black_24dp" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:id="@+id/textView"
+                        android:layout_width="@dimen/activity_20dp_margin"
+                        android:layout_height="@dimen/activity_20dp_margin"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/shop_Organic_Color"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:minEms="3"
+                        android:text="1"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    -->
+</RelativeLayout>

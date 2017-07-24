@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:id="@+id/rl_Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="8dp">
+
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:id="@+id/tv_Category_Name"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Category Name"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_18" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_Close"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:src="@drawable/ic_close" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDividerGray" />
+</LinearLayout>

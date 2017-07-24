@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <include
+        android:id="@+id/ll_Header"
+        layout="@layout/layout_cart_delivery_header" />
+
+    <FrameLayout
+        android:id="@+id/layAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_Header"
+        android:orientation="vertical" />
+</RelativeLayout>

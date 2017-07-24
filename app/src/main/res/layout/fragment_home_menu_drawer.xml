@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_drawerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_light">
+
+        <LinearLayout
+            android:id="@+id/ll_Profile_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginLeft="@dimen/margin15dp"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_Profile_Image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ic_account_circle_white_24dp"
+                android:gravity="center_vertical"
+                app:civ_border_color="@color/lightGrey"
+                app:civ_border_width="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Header"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ll_Profile_Image"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:id="@+id/tv_UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_18" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:id="@+id/tv_UserMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 9870562863"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_18" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ll_Header"
+            android:background="@color/colorDividerGray" />
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_SignOut"
+        android:layout_below="@+id/rl_drawerHeader"
+        android:background="@drawable/drawer_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_SignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_blue_color"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_MenuIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin15dp"
+            android:layout_marginRight="@dimen/margin10dp">
+
+            <ImageView
+                android:id="@+id/iv_MenuIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_exit_to_app_black_24dp" />
+        </LinearLayout>
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_MenuIcon"
+            android:padding="15dp"
+            android:text="SIGN OUT"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_18" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

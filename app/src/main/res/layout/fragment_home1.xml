@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+    <ScrollView
+        android:id="@+id/sv_Banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+        android:layout_below="@+id/swipeContainer"
+        android:id="@+id/tv_NoData"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:layout_centerInParent="true"
+        android:text="No Features Available"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

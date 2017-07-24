@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_drawerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:id="@+id/lblHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Header"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+    </LinearLayout>
+
+    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+        android:id="@+id/lblOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingBottom="8dp"
+        android:text="Option"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16" />
+</LinearLayout>

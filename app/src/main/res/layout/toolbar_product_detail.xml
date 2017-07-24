@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|center_horizontal"
+        android:padding="8.0dip">
+        <ImageView
+            android:layout_toRightOf="@+id/llPDPback"
+            android:background="@drawable/logo"
+            android:layout_width="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_height="40.0dip"/>
+        <LinearLayout
+            android:layout_marginRight="10.0dip"
+
+            android:id="@+id/llPDPback"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/circle_pdp_icon_container_button"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnFav"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48.0dip"
+            android:background="@drawable/circle_pdp_icon_container_button"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgfav"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_favorite_black_24px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_Cart"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_pdp_icon_container_button">
+
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_cart_black" />
+
+            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                android:id="@+id/tvp_Count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_red_notification_bg"
+                android:gravity="center"
+                android:lines="1"
+                android:visibility="gone"
+                android:minHeight="18.0dip"
+                android:minWidth="18.0dip"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="9.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

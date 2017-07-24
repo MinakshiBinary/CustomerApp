@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/NstScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_PlaceOrder"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/cart_Header"
+                layout="@layout/layout_cart_payment_header" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/rounded_border_imageborder_subcategory">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8.0dip"
+                        android:text="PRICE DETAILS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <include layout="@layout/divider_horzontal_full" />
+
+                    <TableLayout
+                        android:id="@+id/tl_infoTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_marginTop="8.0dip">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="4.0dip">
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="Product Amount"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tvProductAmount"
+                                android:layout_toLeftOf="@+id/tvProductAmount"
+                                android:layout_toStartOf="@+id/tvProductAmount"
+                                android:text="Rs "
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_11"
+                                android:textStyle="bold" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:id="@+id/tvProductAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="12000"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="4.0dip">
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="COD Charges"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:id="@+id/tv_CodCharges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="FREE"
+                                android:textColor="@color/shop_Organic_Color"
+                                android:textSize="@dimen/text_12"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="4.0dip">
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="Discount"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewRS
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tvDiscount"
+                                android:layout_toLeftOf="@+id/tvDiscount"
+                                android:layout_toStartOf="@+id/tvDiscount"
+                                android:text="Rs "
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_11"
+                                android:textStyle="bold" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:id="@+id/tvDiscount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="120"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="4.0dip">
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="Shipping Charges"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:id="@+id/tv_ShippingCharges"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="FREE"
+                                android:textColor="@color/shop_Organic_Color"
+                                android:textSize="@dimen/text_12"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="4.0dip">
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="Sub Total"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_SubTotal"
+                                android:layout_toLeftOf="@+id/tv_SubTotal"
+                                android:layout_toStartOf="@+id/tv_SubTotal"
+                                android:text="Rs "
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_11"
+                                android:textStyle="bold" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:id="@+id/tv_SubTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="12000"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="4.0dip">
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="Vat 1.2%"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/tv_VatTotal"
+                                android:layout_toLeftOf="@+id/tv_VatTotal"
+                                android:layout_toStartOf="@+id/tv_VatTotal"
+                                android:text="Rs "
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_11"
+                                android:textStyle="bold" />
+
+                            <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                                android:id="@+id/tv_VatTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="120"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/text_12"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </TableLayout>
+
+                    <include layout="@layout/divider_horzontal_full" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="8.0dip">
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_Desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="TOTAL"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="@dimen/text_14"
+                            android:textStyle="bold" />
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tv_Price"
+                            android:layout_toLeftOf="@+id/tv_Price"
+                            android:layout_toStartOf="@+id/tv_Price"
+                            android:text="Rs "
+                            android:textColor="@color/textPrimary"
+                            android:textSize="@dimen/text_12"
+                            android:textStyle="bold" />
+
+                        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                            android:id="@+id/tv_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="12000"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="@dimen/text_14"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/rounded_border_imageborder_subcategory"
+                android:padding="4.0dip"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_Note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="4.0dip"
+                    android:background="@color/colorWhite"
+                    android:hint="Special Note"
+                    android:inputType="textPostalAddress"
+                    android:maxLength="10"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_16" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="Payment options"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_12" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48.0dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_COD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8.0dip">
+
+                    <RadioButton
+                        android:id="@+id/rb_OptionCOD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:focusable="false" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Cash on delivery"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_OptionCOD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_info"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48.0dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_Online"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="8.0dip">
+
+                    <RadioButton
+                        android:id="@+id/rb_OptionCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Credit Card/Debit Card"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_OptionCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_info"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_PlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="56.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8.0dip"
+        android:alpha="0.9"
+        android:background="@drawable/ripple_green_rounded"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16.0dip">
+
+        <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+            android:id="@+id/tv_AddtoCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16.0dip"
+            android:text="Place Order"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">FashionIC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="dim_32">32dp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin80dp">80dp</dimen>
+    <dimen name="margin90dp">90dp</dimen>
+    <dimen name="margin45dp">45dp</dimen>
+    <dimen name="margin35dp">35dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin2dp">2dp</dimen>
+    <dimen name="margin3dp">3dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin12dp">12dp</dimen>
+    <dimen name="margin15dp">15dp</dimen>
+    <dimen name="margin18dp">18dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="margin25dp">25dp</dimen>
+    <dimen name="margin30dp">30dp</dimen>
+    <dimen name="text_24">24sp</dimen>
+
+    <dimen name="text_10">10.0sp</dimen>
+    <dimen name="text_11">11.0sp</dimen>
+    <dimen name="text_12">12.0sp</dimen>
+
+    <dimen name="text_8">8.0sp</dimen>
+    <dimen name="text_9">9.0sp</dimen>
+    <dimen name="waiting_bottom_margin">64.0dip</dimen>
+
+
+    <dimen name="activity_96.0dip_margin">96.0dip</dimen>
+    <dimen name="activity_3.0dip_margin">3.0dip</dimen>
+    <dimen name="activity_56.0dip_margin">56.0dip</dimen>
+    <dimen name="activity_108.0dip_margin">108.0dip</dimen>
+    <dimen name="activity_40.0dip_margin">40.0dip</dimen>
+    <dimen name="activity_8.0dip_margin">8.0dip</dimen>
+
+
+    <dimen name="activity_20dp_margin">20dp</dimen>
+    <dimen name="activity_10dp_margin">10dp</dimen>
+    <dimen name="activity_0dp_margin">0dp</dimen>
+    <dimen name="activity_5dp_margin">5dp</dimen>
+    <dimen name="activity_18dp_margin">18dp</dimen>
+    <dimen name="activity_12sp_margin">12sp</dimen>
+    <dimen name="activity_2dp_margin">2dp</dimen>
+    <dimen name="activity_15dp_margin">15dp</dimen>
+    <dimen name="activity_20sp_margin">20sp</dimen>
+    <dimen name="activity_18sp_margin">18sp</dimen>
+    <dimen name="activity_15sp_margin">15sp</dimen>
+    <dimen name="activity_16sp_margin">16sp</dimen>
+    <dimen name="activity_50dp_margin">50dp</dimen>
+    <dimen name="activity_8dp_margin">8dp</dimen>
+    <dimen name="activity_40dp_margin">40dp</dimen>
+    <dimen name="activity_30dp_margin">30dp</dimen>
+    <dimen name="activity_35dp_margin">35dp</dimen>
+    <dimen name="activity_45dp_margin">45dp</dimen>
+    <dimen name="activity_16dp_margin">16dp</dimen>
+    <dimen name="activity_60dp_margin">60dp</dimen>
+    <dimen name="activity_80dp_margin">80dp</dimen>
+    <string-array name="state">
+        <item>State</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Lakshadweep</item>
+        <item>Puducherry</item>
+    </string-array>
+    <string-array name="array_reason">
+        <item>Select Reason</item>
+        <item>Product not good</item>
+        <item>Product Damage</item>
+        <item>Color problem</item>
+    </string-array>
+</resources>

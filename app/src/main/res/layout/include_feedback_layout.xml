@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layerType="software"
+        android:id="@+id/view"
+        android:layout_marginTop="@dimen/activity_10dp_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_5dp_margin"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_80dp_margin"
+        android:layout_marginRight="@dimen/activity_80dp_margin"
+        android:background="@drawable/dotted_line" />
+
+    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_10dp_margin"
+        android:gravity="center"
+        android:text="  Sell Your Own Products With Us \n Thank You "
+        android:textSize="25dp" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.binaryic.customerapp.fashionic.fragments.FragmentFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_feedback" />
+</LinearLayout>

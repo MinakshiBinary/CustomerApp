@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/ll_Catalog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/margin5dp"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="2dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin10dp"
+            android:layout_marginRight="@dimen/margin10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_Product_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <ImageView
+                    android:id="@+id/iv_Favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/margin8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_favorite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_MiddleContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10dp"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:foregroundGravity="center_vertical">
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/tv_Product_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:maxLines="1"
+                    android:text="Product Name"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="18sp" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/et_OldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Product_Name"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/margin3dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="MRP"
+                    android:background="@drawable/ic_strick_price_white"
+
+                    android:textColor="@color/textSecondary"
+                    android:textSize="18sp" />
+
+                <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                    android:id="@+id/et_Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_Product_Name"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/margin3dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="MRP"
+                    android:textColor="@color/red_dark"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_Buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_Price"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin3dp"
+                    android:background="@drawable/rounded_border_red"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin10dp"
+                    android:paddingLeft="@dimen/margin25dp"
+                    android:paddingRight="@dimen/margin25dp"
+                    android:paddingTop="@dimen/margin10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin5dp"
+                        android:src="@drawable/sell" />
+
+                    <com.binaryic.customerapp.fashionic.custom.TextViewPrimary
+                        android:id="@+id/tv_Buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin5dp"
+                        android:text="Buy"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_18"
+                        custom:textAllCaps="true" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
